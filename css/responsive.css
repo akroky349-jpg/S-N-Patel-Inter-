@@ -1,0 +1,308 @@
+/* ==========================================================================
+   S. N. PATEL INTER COLLEGE - RESPONSIVE STYLESHEET
+   Breakpoints: 1280px, 1024px, 768px, 480px, 375px
+   ========================================================================== */
+
+/* Large Laptops & Desktops (max-width: 1200px) */
+@media (max-width: 1200px) {
+  .hero-heading {
+    font-size: 2.85rem;
+  }
+  
+  .programs-grid, .why-us-grid, .facilities-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+  
+  .faculty-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .footer-grid {
+    grid-template-columns: 1.4fr 1fr 1fr 1.2fr;
+    gap: 2rem;
+  }
+}
+
+/* Tablets (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .top-bar {
+    display: none; /* Hide cluttered topbar on tablets and mobile to prioritize clean UI */
+  }
+  
+  .nav-menu {
+    display: none; /* Switch to hamburger drawer */
+  }
+  
+  .mobile-toggle {
+    display: flex;
+  }
+  
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    text-align: center;
+  }
+  
+  .hero-heading {
+    font-size: 2.5rem;
+  }
+  
+  .hero-lead {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .hero-actions {
+    justify-content: center;
+  }
+  
+  .hero-stats-row {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .hero-card-composition {
+    max-width: 520px;
+    margin: 0 auto;
+  }
+  
+  .about-split-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  
+  .about-media-stack {
+    max-width: 540px;
+    margin: 0 auto;
+  }
+  
+  .principal-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    text-align: center;
+  }
+  
+  .principal-portrait-wrapper {
+    margin: 0 auto;
+  }
+  
+  .facilities-grid, .programs-grid, .why-us-grid, .notices-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .stats-counter-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+  
+  .gallery-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .faculty-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem;
+  }
+  
+  .cta-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 2rem;
+  }
+  
+  .cta-btn-group {
+    justify-content: center;
+  }
+}
+
+/* Mobile Devices & Small Tablets (max-width: 768px) */
+@media (max-width: 768px) {
+  :root {
+    --header-height: 72px;
+  }
+  
+  .section-padding {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+  }
+  
+  .hero-heading {
+    font-size: 2.15rem;
+  }
+  
+  .section-title {
+    font-size: 1.85rem;
+  }
+  
+  .inner-hero-title {
+    font-size: 2.2rem;
+  }
+  
+  .about-main-img {
+    width: 100%;
+    height: 340px;
+  }
+  
+  .about-sub-card {
+    position: static;
+    width: 100%;
+    margin-top: 1rem;
+  }
+  
+  .mv-grid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+  
+  .why-us-grid, .facilities-grid, .programs-grid, .notices-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  
+  .gallery-item.span-2 {
+    grid-column: span 1;
+  }
+  
+  .faculty-grid {
+    grid-template-columns: 1fr;
+    max-width: 380px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .form-group.full-width {
+    grid-column: span 1;
+  }
+  
+  .form-card {
+    padding: 2rem 1.5rem;
+  }
+  
+  .cta-banner {
+    padding: 3rem 1.5rem;
+  }
+  
+  .cta-title {
+    font-size: 1.85rem;
+  }
+  
+  .lightbox-prev {
+    left: 10px;
+  }
+  
+  .lightbox-next {
+    right: 10px;
+  }
+  
+  .lightbox-nav-btn {
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+    background: rgba(16, 42, 67, 0.7);
+  }
+  
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .footer-bottom-flex {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+  
+  .footer-bottom-links {
+    justify-content: center;
+  }
+  
+  .testimonial-card {
+    padding: 2rem 1.25rem;
+  }
+}
+
+/* Small Mobile (max-width: 480px) */
+@media (max-width: 480px) {
+  .hero-heading {
+    font-size: 1.85rem;
+  }
+  
+  .hero-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .hero-actions .btn {
+    width: 100%;
+  }
+  
+  .hero-stats-row {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+  
+  .stats-counter-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .principal-portrait-img {
+    width: 100%;
+    max-width: 280px;
+    height: 320px;
+  }
+  
+  .principal-quote-box {
+    padding: 2rem 1.5rem;
+  }
+  
+  .btn {
+    padding: 0.75rem 1.4rem;
+    font-size: 0.9rem;
+  }
+  
+  .brand-name {
+    font-size: 1.05rem;
+  }
+  
+  .brand-logo-img {
+    width: 44px;
+    height: 44px;
+  }
+  
+  .header-actions .btn-admission {
+    display: none; /* Keep header minimal on ultra small screens; accessible in mobile menu */
+  }
+}
+
+/* Extra Small (max-width: 375px) */
+@media (max-width: 375px) {
+  .hero-heading {
+    font-size: 1.65rem;
+  }
+  
+  .section-title {
+    font-size: 1.6rem;
+  }
+  
+  .stat-number {
+    font-size: 2.75rem;
+  }
+}
